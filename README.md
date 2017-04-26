@@ -27,11 +27,15 @@ Upload the zip file that you downloaded and press the button **“Install Now”
 ### Step 4
 Click the **“Activate plugin”** button. Now your TIMIFY booking widget plugin is installed.
 
+![Image](http://www.clients.webmedia7.com/timify/cms-plugins-github/wordpress-timify-booking-3.png)
+
 ### Step 5
 You will see a new navigation item called **“TIMIFY widget”**. When you open it you will be able to define the settings for the booking button. 
 
 ### Step 6
 From the TIMIFY Web Application copy your **booking ID** and paste it in the corresponding field in Wordpress. You will find your booking ID at the bottom of the page **“Booking buttons”** in the section **“Online booking”**.
+
+![Image](http://www.clients.webmedia7.com/timify/cms-plugins-github/wordpress-timify-booking-4.png)
 
 ### Step 7
 Last but not least define the position of the button. We offer you three options: 

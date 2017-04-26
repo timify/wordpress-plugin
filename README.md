@@ -1,12 +1,12 @@
-## TIMIFY Wordpress plugin
+## What is this plugin about?
 
 This plugin installs the TIMIFY booking widget to your wordpress website. You can define the type, position and language of the button in the settings page of the plugin directly in your wordpress admin panel.
 
-### How it works
+## How it works?
 
 The installation of the plugin is pretty easy. Simply follow the steps bellow:
 
-## Step 1
+### Step 1
 
 Download the latest version of the plugin. It's advisable to always have the latest plugin version so come around from time to time to see if you're still working with the latest version.
 

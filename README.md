@@ -22,6 +22,8 @@ In the navigation, click the menu item **“Plugins”** then click the submenu 
 ### Step 3
 Upload the zip file that you downloaded and press the button **“Install Now”**.
 
+![Image](http://www.clients.webmedia7.com/timify/cms-plugins-github/wordpress-timify-booking-2.png)
+
 ### Step 4
 Click the **“Activate plugin”** button. Now your TIMIFY booking widget plugin is installed.
 

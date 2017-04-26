@@ -1,17 +1,20 @@
-## Welcome to GitHub Pages
+## TIMIFY Wordpress plugin
 
-You can use the [editor on GitHub](https://github.com/timify/wordpress-plugin/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+This plugin installs the TIMIFY booking widget to your wordpress website. You can define the type, position and language of the button in the settings page of the plugin directly in your wordpress admin panel.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### How it works
 
-### Markdown
+The installation of the plugin is pretty easy. Simply follow the steps bellow:
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## Step 1
+
+Download the latest version of the plugin. It's advisable to always have the latest plugin version so come around from time to time to see if you're still working with the latest version.
+
+Download the plugin here: [https://www.github.com]
 
 ```markdown
 Syntax highlighted code block
 
-# Header 1
 ## Header 2
 ### Header 3
 

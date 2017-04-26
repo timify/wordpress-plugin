@@ -32,8 +32,8 @@ From the TIMIFY Web Application copy your **booking ID** and paste it in the cor
 ### Step 7
 Last but not least define the position of the button. We offer you three options: 
 
- - button on the right & button on the left, which will show always on all your pages
- - button at the end of every post. Here you will be able also to define the label for this button.
+   - button on the right & button on the left, which will show always on all your pages
+   - button at the end of every post. Here you will be able also to define the label for this button.
 
 ### Step 8
 Additionally you have the option to define the main language of the widget. If your country is not displayed in the list please write an email to support(at)timify.com

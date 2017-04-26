@@ -17,6 +17,8 @@ Download the plugin here: [Download now](https://github.com/timify/wordpress-plu
 Next, login to your wordpress website as administrator in order to install the plugin.
 In the navigation, click the menu item **“Plugins”** then click the submenu **“Add new”** and then click the **“Upload Plugin”** button.
 
+!
+
 ### Step 3
 Upload the zip file that you downloaded and press the button **“Install Now”**.
 

@@ -1,17 +1,17 @@
 <?php
 
 	$availableLanguages		= array(
-		'de'			=> 'Deutschland',
-		'en'			=> 'English',
-		'ee'			=> 'Eesti',
-		'es'			=> 'España',
-		'fr'			=> 'France',
-		'hu'			=> 'Hungary',
-		'it'			=> 'Italia',
-		'nl'			=> 'Nederland',
-		'ru'			=> 'Россия',
-		'zh'			=> '台灣',
-		'ph'			=> 'Philippines',
+		'de-de'			=> 'Deutschland',
+		'en-gb'			=> 'English',
+		'et-ee'			=> 'Eesti',
+		'es-es'			=> 'España',
+		'fr-fr'			=> 'France',
+		'hu-hu'			=> 'Hungary',
+		'it-it'			=> 'Italia',
+		'nl-nl'			=> 'Nederland',
+		'ru-ru'			=> 'Россия',
+		'zh-tw'			=> '台灣',
+		'en-ph'			=> 'Philippines',
 	);
 
 	$timifyWidgetId			= get_option('timify_widget_id');

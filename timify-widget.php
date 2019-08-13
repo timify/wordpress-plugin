@@ -6,8 +6,8 @@
 Plugin Name: Timify Widget
 Plugin URI: https://www.timify.com/
 Description: Timify is the largest booking system in the world!
-Version: 1.0
-Author: Timify
+Version: 2.0
+Author: TIMIFY
 Author URI: https://www.timify.com/
 License: GPLv2 or later
 */
@@ -35,7 +35,7 @@ class TimifyWidget {
 		$this->timifyWidgetButtonLabel	= get_option('timify_widget_button_label');
 
 		if ($this->timifyWidgetLanguage === false) {
-			$this->timifyWidgetLanguage = 'de';
+			$this->timifyWidgetLanguage = 'de-de';
 		}
 		if ($this->timifyWidgetPosition === false) {
 			$this->timifyWidgetPosition = 'left';
@@ -59,14 +59,15 @@ class TimifyWidget {
 		//Add widget code to the footer
 		if ($this->timifyWidgetId !== false && trim($this->timifyWidgetId) !== '') {
 ?>
-			<script async id="timify"
+			<script async
+        src="//book.timify.com/widget/widget.min.js"
+	      id="timify-widget"
 				<?php if ($this->timifyWidgetPosition == 'left' || $this->timifyWidgetPosition == 'right') { ?>
-					data-id="<?php echo $this->timifyWidgetId; ?>"
+					data-account-id="<?php echo $this->timifyWidgetId; ?>"
 				<?php } ?>
-				data-lang="<?php echo $this->timifyWidgetLanguage; ?>"
+				data-locale="<?php echo $this->timifyWidgetLanguage; ?>"
 				type="text/javascript"
 				data-position="<?php echo ($this->timifyWidgetPosition != 'left' && $this->timifyWidgetPosition != 'right' ? 'multiple' : $this->timifyWidgetPosition); ?>"
-				src="https://widget.timify.com/js/widget.js">
 			</script>
 <?php
 		}
@@ -76,7 +77,7 @@ class TimifyWidget {
 	public function insertWidgetAfterContent($content) {
 
 		if ($this->timifyWidgetId !== false && trim($this->timifyWidgetId) !== '') {
-			$content .= '<button class="timify-button" data-id="' . $this->timifyWidgetId . '">' .
+			$content .= '<button class="timify-button" data-account-id="' . $this->timifyWidgetId . '">' .
 					$this->timifyWidgetButtonLabel .
 				'</button>';
 		}

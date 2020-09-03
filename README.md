@@ -12,8 +12,6 @@ First, you should download the latest version of the Wordpress plugin. Simply cl
 
 Download the plugin here: [Download now](https://github.com/timify/wordpress-plugin/raw/master/releases/2.0/timify-widget.zip)
 
-If you still using our old system please version 1.0 of our plugin here [Download now](https://github.com/timify/wordpress-plugin/raw/master/releases/1.0/timify-widget.zip)
-
 ### Step 2
 
 Next, login to your wordpress website as administrator in order to install the plugin.

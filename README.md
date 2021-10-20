@@ -17,19 +17,19 @@ Download the plugin here: [Download now](https://github.com/timify/wordpress-plu
 Next, login to your wordpress website as administrator in order to install the plugin.
 In the navigation, click the menu item **“Plugins”** then click the submenu **“Add new”** and then click the **“Upload Plugin”** button.
 
-![Image](http://www.clients.webmedia7.com/timify/cms-plugins-github/wordpress-timify-booking-0.png)
+![Image](https://cdn.timify.com/github/wordpress-timify-booking-0.png)
 
 ### Step 3
 
 Upload the zip file that you downloaded and press the button **“Install Now”**.
 
-![Image](http://www.clients.webmedia7.com/timify/cms-plugins-github/wordpress-timify-booking-2.png)
+![Image](https://cdn.timify.com/github/wordpress-timify-booking-2.png)
 
 ### Step 4
 
 Click the **“Activate plugin”** button. Now your TIMIFY booking widget plugin is installed.
 
-![Image](http://www.clients.webmedia7.com/timify/cms-plugins-github/wordpress-timify-booking-3.png)
+![Image](https://cdn.timify.com/github/wordpress-timify-booking-3.png)
 
 ### Step 5
 
@@ -38,9 +38,10 @@ You will see a new navigation item called **“TIMIFY widget”**. When you open
 ### Step 6
 
 From the TIMIFY Web Application copy your **TIMIFY Account ID** and paste it in the corresponding field in Wordpress. You will find your TIMIFY Account ID at the bottom of the page **“Booking Widget** in the section **Integration”**.
-In the case of using an **Enterprise Account**, you must use the Account Id of your Branch Manager and click the checkbox to indicate to the widget that it is an Enterprise Account.
 
-![Image](http://www.clients.webmedia7.com/timify/cms-plugins-github/wordpress-timify-booking-4.png)
+Note: In the case of using an **Enterprise Account**, you must use the Account Id of your Branch Manager and click the checkbox to indicate to the widget that it is an Enterprise Account.
+
+![Image](https://cdn.timify.com/github/wordpress-timify-booking-4.png)
 
 ### Step 7
 

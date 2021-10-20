@@ -6,7 +6,7 @@
 Plugin Name: Timify Widget
 Plugin URI: https://www.timify.com/
 Description: Timify is the largest booking system in the world!
-Version: 2.0
+Version: 2.1
 Author: TIMIFY
 Author URI: https://www.timify.com/
 License: GPLv2 or later
@@ -21,6 +21,7 @@ if ( !function_exists( 'add_action' ) ) {
 class TimifyWidget {
 
 	public $timifyWidgetId			= false;
+	public $timifyEnterpriseAccount = false;
 	public $timifyWidgetLanguage	= false;
 	public $timifyWidgetPosition	= false;
 	public $timifyWidgetButtonLabel	= false;
@@ -30,6 +31,7 @@ class TimifyWidget {
 
 		//Load widget data
 		$this->timifyWidgetId			= get_option('timify_widget_id');
+		$this->timifyEnterpriseAccount = get_option('timify_enterprise_account');
 		$this->timifyWidgetLanguage		= get_option('timify_widget_language');
 		$this->timifyWidgetPosition		= get_option('timify_widget_position');
 		$this->timifyWidgetButtonLabel	= get_option('timify_widget_button_label');
@@ -56,30 +58,37 @@ class TimifyWidget {
 
 	public function addToFooter() {
 
+		
 		//Add widget code to the footer
 		if ($this->timifyWidgetId !== false && trim($this->timifyWidgetId) !== '') {
-?>
+
+			$content = 'data-account-id=';
+			if (isset($this->timifyEnterpriseAccount) && $this->timifyEnterpriseAccount == "on") {
+				$content = 'data-enterprise-id=';
+			}
+			$content = $content . $this->timifyWidgetId;
+		?>
 			<script async
         src="//book.timify.com/widget/widget.min.js"
 	      id="timify-widget"
 				<?php if ($this->timifyWidgetPosition == 'left' || $this->timifyWidgetPosition == 'right') { ?>
-					data-account-id="<?php echo $this->timifyWidgetId; ?>"
+					<?php echo $content ?>
 				<?php } ?>
 				data-locale="<?php echo $this->timifyWidgetLanguage; ?>"
 				type="text/javascript"
 				data-position="<?php echo ($this->timifyWidgetPosition != 'left' && $this->timifyWidgetPosition != 'right' ? 'multiple' : $this->timifyWidgetPosition); ?>"
 			</script>
-<?php
-		}
-
+		<?php	}
 	}
 
 	public function insertWidgetAfterContent($content) {
 
 		if ($this->timifyWidgetId !== false && trim($this->timifyWidgetId) !== '') {
-			$content .= '<button class="timify-button" data-account-id="' . $this->timifyWidgetId . '">' .
-					$this->timifyWidgetButtonLabel .
-				'</button>';
+			if (isset($this->timifyEnterpriseAccount) && $this->timifyEnterpriseAccount == "on") {
+				$content .= '<button class="timify-button" data-enterprise-id="' . $this->timifyWidgetId . '">' .$this->timifyWidgetButtonLabel .'</button>';
+			} else {
+				$content .= '<button class="timify-button" data-account-id="' . $this->timifyWidgetId . '">' .$this->timifyWidgetButtonLabel .'</button>';
+			}
 		}
 
 		return $content;

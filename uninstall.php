@@ -10,6 +10,7 @@ if ( ! defined( 'WP_UNINSTALL_PLUGIN' ) ) {
 }
 
 delete_option('timify_widget_id');
+delete_option('timify_enterprise_account');
 delete_option('timify_widget_language');
 delete_option('timify_widget_position');
 delete_option('timify_widget_button_label');

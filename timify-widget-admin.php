@@ -15,6 +15,7 @@
 	);
 
 	$timifyWidgetId			= get_option('timify_widget_id');
+	$timifyEnterpriseAccount	= get_option('timify_enterprise_account');
 	$timifyWidgetLanguage	= get_option('timify_widget_language');
 	$timifyWidgetPosition	= get_option('timify_widget_position');
 	$timifyWidgetButtonLabel= get_option('timify_widget_button_label');
@@ -52,6 +53,14 @@
 				update_option('timify_widget_id', $_POST['timify_widget_id']);
 			}
 
+			//Check is exist timify exterprise account Id
+			if ($timifyEnterpriseAccount === false) {
+				add_option('timify_enterprise_account', $_POST['timify_enterprise_account']);
+			}
+			else {
+				update_option('timify_enterprise_account', $_POST['timify_enterprise_account']);
+			}
+
 			//Check is exist timify widget language
 			if ($timifyWidgetLanguage === false) {
 				add_option('timify_widget_language', $_POST['timify_widget_language']);
@@ -67,6 +76,7 @@
 			else {
 				update_option('timify_widget_position', $_POST['timify_widget_position']);
 			}
+			add_option('timify_widget_position', $_POST['timify_widget_position']);
 
 			//Check is exist timify widget button label
 			if ($timifyWidgetButtonLabel === false) {
@@ -81,6 +91,8 @@
 	}
 	else {
 		$_POST['timify_widget_id']			= $timifyWidgetId;
+		$_POST['timify_enterprise_account']	= $timifyEnterpriseAccount;
+
 		$_POST['timify_widget_language']	= $timifyWidgetLanguage;
 		$_POST['timify_widget_position']	= $timifyWidgetPosition;
 		$_POST['timify_widget_button_label']= $timifyWidgetButtonLabel;
@@ -115,6 +127,7 @@
 							<label for="timify_widget_id">Your Timify ID</label>
 						</th>
 						<td>
+
 							<input type="text" id="timify_widget_id" name="timify_widget_id"
 								   value="<?php if (isset($_POST['timify_widget_id'])) { echo $_POST['timify_widget_id']; } ?>"
 								   class="regular-text code">
@@ -123,6 +136,14 @@
 							<?php } ?>
 						</td>
 					</tr>
+						<th scope="row">
+							<label for="timify_enterprise_account">Enterprise account?</label>
+						</th>
+						<td>
+							<input type="checkbox" id="timify_enterprise_account" name="timify_enterprise_account" <?php if (isset($_POST['timify_enterprise_account']) && $_POST['timify_enterprise_account'] == "on") { ?> checked="checked"<?php } ?>>
+						</td>
+					</tr>
+
 					<tr>
 						<th scope="row">
 							<label for="timify_widget_lang">Choose Language</label>

@@ -76,7 +76,7 @@ class TimifyWidget {
 				<?php } ?>
 				data-locale="<?php echo $this->timifyWidgetLanguage; ?>"
 				type="text/javascript"
-				data-position="<?php echo ($this->timifyWidgetPosition != 'left' && $this->timifyWidgetPosition != 'right' ? 'multiple' : $this->timifyWidgetPosition); ?>"
+				data-position="<?php echo ($this->timifyWidgetPosition != 'left' && $this->timifyWidgetPosition != 'right' ? 'multiple' : $this->timifyWidgetPosition); ?>">
 			</script>
 		<?php	}
 	}
